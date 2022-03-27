@@ -1,0 +1,72 @@
+h2 {
+  font-size: 16px;
+  color: rgb(197, 33, 33);
+  margin-top: 0;
+}
+.movie {
+  display: flex;
+  padding: 15px;
+  background-color: white;
+  align-items: flex-start;
+}
+
+.movie__info {
+  font-size: 11px;
+  margin: 0;
+}
+
+.poster {
+  overflow: hidden;
+  flex: 0 0 33.333%;
+  position: relative;
+}
+.movie__poster {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.movie__rating {
+  position: absolute;
+  color: white;
+  background-color: orange;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 20px;
+  transform: rotate(-45deg);
+  left: -18px;
+  top: 0px;
+}
+
+.movie__rating--add {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.movie__content {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+
+.actor {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  font-size: 11px;
+}
+
+h3 {
+  font-size: 11px;
+  color: rgb(197, 33, 33);
+  margin-bottom: 0;
+}
+
+.actor__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+}
+
+.infoBox {
+  padding-left: 20px;
+}

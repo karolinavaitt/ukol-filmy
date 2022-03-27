@@ -1,11 +1,13 @@
 import React from "react";
 import Movie from "../Movie";
+import "./style.css";
 
 const MovieList = ({ movies }) => {
   return (
     <div className="movie__list">
-      {movies.map((movie) => (
+      {movies.map((movie, id) => (
         <Movie
+          key={id}
           movie={movie.id}
           title={movie.title}
           poster={movie.poster}
